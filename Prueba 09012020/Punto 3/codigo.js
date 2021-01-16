@@ -39,13 +39,13 @@ function crearTabla(tablaPersonas) {
         for (i = 0; i < tablaPersonas.length; i++) {
             var item = [];
             item.push(
-                tablaPersonas[i].id,
+                // tablaPersonas[i].id,
                 tablaPersonas[i].nombre,
                 tablaPersonas[i].apellido,
                 tablaPersonas[i].correo,
                 tablaPersonas[i].telefono,
                 tablaPersonas[i].pais,
-                '<input class="btn btn-danger" type="button" onclick="eliminar(' + tablaPersonas[i].id + ');" value="Eliminar" />',
+                '<input class="btn btn-danger d-block mx-auto" type="button" onclick="eliminar(' + tablaPersonas[i].id + ');" value="X" />',
             );
             dataSet.push(item);
         }
@@ -53,7 +53,7 @@ function crearTabla(tablaPersonas) {
             "bDestroy": true,
             data: dataSet,
             columns: [
-                { title: "Id" },
+                //{ title: "Id".disabled },
                 { title: "Nombre" },
                 { title: "Apellido" },
                 { title: "Correo" },
