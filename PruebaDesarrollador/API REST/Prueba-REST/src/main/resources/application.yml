@@ -6,7 +6,7 @@ spring:
       hibernate:
        dialect: org.hibernate.dialect.PostgreSQL10Dialect
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
     password: d102c64ecef99697a979d7ed3908ee8b08ca0b3f42341d40f51db66b79eca733
     url: postgres://ksdnkdlbziduzj:d102c64ecef99697a979d7ed3908ee8b08ca0b3f42341d40f51db66b79eca733@ec2-54-204-96-190.compute-1.amazonaws.com:5432/d94265et5m9o8u
     username: ksdnkdlbziduzj
