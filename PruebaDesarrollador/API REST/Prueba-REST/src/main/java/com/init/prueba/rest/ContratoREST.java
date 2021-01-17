@@ -37,8 +37,7 @@ public class ContratoREST {
 			return ResponseEntity.ok(contrato.get());
 		}else {
 			return ResponseEntity.noContent().build();
-		}
-		
+		}	
 	}
 	
 	@PostMapping //Crear contrato
