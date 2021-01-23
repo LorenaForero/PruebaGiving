@@ -1,0 +1,21 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbotron-fondo {
+    background-color: royalblue;
+}
+
+.tabla-fondo {
+    background-color: snow;
+}
+
+.texto-blanco {
+    color: snow;
+    font-weight: bold;
+}
+
+.thead-color {
+    background-color: darkblue;
+    color: snow;
+}
