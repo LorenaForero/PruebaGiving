@@ -18,7 +18,7 @@ import com.init.prueba.rest.daos.ContratoDAO;
 import com.init.prueba.rest.entidades.ContratoEntidad;
 
 @RestController
-@RequestMapping("contratos")
+@RequestMapping("prueba_rest/contratos")
 public class ContratoREST {
 
 	@Autowired
