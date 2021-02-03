@@ -1,0 +1,49 @@
+<div class="container">
+
+    <h2 class="text-center">Editar contrato</h2>
+    <hr>
+    <form [formGroup]="modificarForm" (ngSubmit)="editarContrato(modificarForm.value)">
+        <div class="formulario">
+            <section>
+                <div class="form-group">
+                    <label for="identificacion">Id Contrato</label>
+                    <input type="text" class="form-control" formControlName="tipo_id" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="identificacion">Identificación</label>
+                    <input type="text" class="form-control" formControlName="id" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" formControlName="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" formControlName="apellido">
+                </div>
+            </section>
+            <section>
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="text" class="form-control" formControlName="edad">
+                </div>
+                <div class="form-group">
+                    <label for="cat">Cat</label>
+                    <input type="text" class="form-control" formControlName="cat">
+                </div>
+                <div class="form-group">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" class="form-control" formControlName="cargo">
+                </div>
+            </section>
+        </div>
+        <div class="botones">
+            <div class="btn-crear">
+                <button type="submit" class="btn btn-info">Guardar</button>
+            </div>
+            <div class="btn-cancelar">
+                <button type="reset" class="btn btn-warning" [routerLink]="['']">Cancelar</button>
+            </div>
+        </div>
+    </form>
+</div>

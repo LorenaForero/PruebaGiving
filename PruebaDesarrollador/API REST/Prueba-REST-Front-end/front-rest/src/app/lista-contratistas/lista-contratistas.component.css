@@ -1,21 +1,13 @@
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.jumbotron-fondo {
-    background-color: royalblue;
+.card {
+    margin-top: 30px;
+    padding: 5px;
 }
 
 .tabla-fondo {
     background-color: snow;
 }
 
-.texto-blanco {
-    color: snow;
-    font-weight: bold;
-}
-
 .thead-color {
-    background-color: darkblue;
+    background-color: rgb(0, 35, 99);
     color: snow;
 }

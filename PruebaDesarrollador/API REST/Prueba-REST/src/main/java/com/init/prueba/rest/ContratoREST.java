@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +19,7 @@ import com.init.prueba.rest.daos.ContratoDAO;
 import com.init.prueba.rest.entidades.ContratoEntidad;
 
 @RestController
-@RequestMapping("prueba_rest/contratos")
+@RequestMapping("api_rest/contratos")
 public class ContratoREST {
 
 	@Autowired
@@ -51,6 +52,7 @@ public class ContratoREST {
 		contratoDao.deleteById(id);
 		return ResponseEntity.ok(null);
 	}
+	
 	
 	@PutMapping //Modificar contrato por id
 	public ResponseEntity<ContratoEntidad> modificarContrato(@RequestBody ContratoEntidad contrato){

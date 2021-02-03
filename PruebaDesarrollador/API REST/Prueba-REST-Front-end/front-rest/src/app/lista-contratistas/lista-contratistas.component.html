@@ -1,68 +1,58 @@
-<div class="jumbotron jumbotron-fondo">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col col-xs-6">
-                        <h3 class="texto-blanco">
-                            Lista de Contratos
-                        </h3>
-                    </div>
-                    <div class="col col-xs-6 text-right">
-                        <button type="button" class="btn btn-success">Crear contrato</button>
-                    </div>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-xs-3 col-sm-6 col-12">
+                    <h2>Lista de contratos</h2>
+                    <button type="button" class="btn btn-info" [routerLink]="['nuevoContrato']">Nuevo
+                        contrato</button>
                 </div>
-                <div class="table-responsive">
+            </div>
+        </div>
+        <div class="card-body">
+            <section class="card-text">
+                <div class="table-responsive table-responsive-sm tabla">
+
                     <table class="table table-bordered tabla-fondo">
-                        <thead class="thead-color">
+                        <thead class="thead-color text-center">
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Identificación</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Edad</th>
+                                <th scope="col">Cat</th>
+                                <th scope="col">Cargo</th>
+                                <th colspan="2" scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                            <tr *ngFor="let contrato of listaContratos">
+                                <th scope="row">{{contrato.tipo_id}}</th>
+                                <td>{{contrato.id}}</td>
+                                <td>{{contrato.nombre}}</td>
+                                <td>{{contrato.apellido}}</td>
+                                <td>{{contrato.edad}}</td>
+                                <td>{{contrato.cat}}</td>
+                                <td>{{contrato.cargo}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger" (click)="eliminarContrato(contrato.tipo_id)">
+                                        Eliminar
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-info" (click)="modificarContrato(contrato.tipo_id)">
+                                        Editar
+                                    </button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="panel-footer">
-                    <div class="row">
-
-                        <div class="col col-xs-4">Page 1 of 5
-                        </div>
-                        <div class="col col-xs-8">
-                            <ul class="pagination hidden-xs pull-right" id="myPager">
-                            </ul>
-                            <ul class="pagination visible-xs pull-right">
-                                <li><a href="#">«</a></li>
-                                <li><a href="#">»</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
 
         </div>
     </div>
+
+
 </div>

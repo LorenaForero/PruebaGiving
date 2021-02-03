@@ -10,4 +10,5 @@ spring:
     password: 4NzD9XxsnN4PuIOHWJK8
     url: jdbc:mysql://ux8x1at3lljrjdll:4NzD9XxsnN4PuIOHWJK8@br3nqeekgaksouxe0ttw-mysql.services.clever-cloud.com:3306/br3nqeekgaksouxe0ttw
     username: ux8x1at3lljrjdll
+    
 

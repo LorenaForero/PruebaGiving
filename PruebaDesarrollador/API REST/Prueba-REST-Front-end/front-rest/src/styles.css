@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('./assets/fondo.jpg') no-repeat fixed;
+    /*background: linear-gradient(to bottom right, blue, white) no-repeat fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.texto-blanco {
+    color: snow;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.formulario {
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formulario section {
+    padding: 2%;
+    width: 30vw;
+}
+
+@media(max-width:500px) {
+    .container h2 {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .container .formulario {
+        color: black;
+    }
+    .container .formulario section {
+        padding: 1%;
+        width: 100vw;
+    }
+}
