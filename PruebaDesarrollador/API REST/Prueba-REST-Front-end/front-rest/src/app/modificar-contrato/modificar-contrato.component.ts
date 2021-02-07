@@ -42,7 +42,7 @@ export class ModificarContratoComponent implements OnInit {
 
   editarContrato(form: listaContratosI) {
     this.servicio.editarContrato(form).subscribe(data => {
-      console.log(data);
+      location.reload();
     });
     this.router.navigate(['']);
   }

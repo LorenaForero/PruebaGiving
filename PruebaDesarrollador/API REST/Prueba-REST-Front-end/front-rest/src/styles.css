@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --color_nav: rgb(0, 35, 99);
+}
+
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
@@ -43,7 +47,18 @@ h2 {
     width: 30vw;
 }
 
+nav {
+    background-color: var(--color_nav);
+    color: snow;
+}
+
 @media(max-width:500px) {
+    table {
+        font-size: 14px;
+    }
+    table .btn {
+        font-size: 14px;
+    }
     .container h2 {
         font-weight: bold;
         font-size: 25px;
@@ -52,7 +67,7 @@ h2 {
         color: black;
     }
     .container .formulario section {
-        padding: 1%;
+        padding: 10px;
         width: 100vw;
     }
 }

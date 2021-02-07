@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { listaContratosI } from "../modelos/listaContratos.Interface";
 import { crearContratoI } from '../modelos/crearContrato.Interface';
@@ -13,19 +13,23 @@ export class ServContratosService {
 
   constructor(private http: HttpClient) { }
 
+  //Traer contratos
   getContratos(): Observable<listaContratosI[]> {
     return this.http.get<listaContratosI[]>(this.url);
   }
 
+  //Consultar contrato por id
   getContratosById(tipo_id): Observable<listaContratosI> {
     let urlContrato = this.url + tipo_id;
     return this.http.get<listaContratosI>(urlContrato);
   }
 
+  //Crear contrato
   crearContrato(datosContrato: crearContratoI) {
     return this.http.post(this.url, datosContrato);
   }
 
+  //Editar contrato
   editarContrato(datosEdit: listaContratosI) {
     return this.http.put(this.url, datosEdit);
   }

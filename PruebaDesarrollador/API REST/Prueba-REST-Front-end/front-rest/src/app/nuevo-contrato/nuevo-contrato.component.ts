@@ -32,7 +32,7 @@ export class NuevoContratoComponent implements OnInit {
   crearContrato(nuevoContrato: crearContratoI) {
     this.datosContrato = nuevoContrato;
     this.servicio.crearContrato(this.datosContrato).subscribe(data => {
-      console.log(data);
+      location.reload();
     });
     this.router.navigate(['']);
   }

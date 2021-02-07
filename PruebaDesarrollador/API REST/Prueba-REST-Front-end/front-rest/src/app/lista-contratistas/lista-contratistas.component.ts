@@ -26,8 +26,8 @@ export class ListaContratistasComponent implements OnInit {
 
   eliminarContrato(tipo_id) {
     return this.servicio.eliminarContrato(tipo_id).subscribe(data => {
-      console.log(data);
-    })
+      location.reload();
+    });
   }
 
 }
