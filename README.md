@@ -1,5 +1,5 @@
-# PruebaGiving
-Prueba técnica Giving agency  
+# PruebaRESTContratos
+REST Contratos  
 URL Servicio REST - Documentación:https://api-rest-contratos.herokuapp.com/v2/api-docs
 
 Front-end Contratos REST: https://pruebarestgiving.web.app
