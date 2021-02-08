@@ -1,3 +1,7 @@
 # PruebaGiving
 Prueba técnica Giving agency  
-URL Servicio REST - Documentación:https://prueba-api-rest-contratos.herokuapp.com/swagger-ui.html#/contrato-rest
+URL Servicio REST - Documentación:https://api-rest-contratos.herokuapp.com/v2/api-docs
+Front-end Contratos REST: https://pruebarestgiving.web.app
+
+Back-end api rest realizado con SpringBoot
+Front-end realizado con Angular
